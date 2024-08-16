@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <h1>Job Application Form</h1>
+        <p>
+          Thank you for your interest in working with us. Please check below for
+          available job opportunities that meet your criteria and send your
+          application by filling out the Job Application Form.
+        </p>
+        <b><label for="name">Name: </label></b>
+        <input type="text" placeholder="First" name="name" />
+        <input type="text" placeholder="Last" />
+        <br /><br />
+        <b><label for="email">Email: </label></b>
+        <input type="text" placeholder="john.doe@example.com" />
+        <br /><br />
+        <b
+          ><label for="position">What position are you applying for? </label></b
+        >
+        <select name="position">
+          <option value="">- Select -</option>
+          <option value="frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="full-stack">Full-Stack</option>
+        </select>
+        &ensp;
+        <b><label for="date">Available date:</label></b>
+        <input type="date" id="date" name="date" />
+        <br /><br />
+        <b><label for="status">Current employee status:</label></b>
+        <input type="radio" id="employed" name="status" value="Employed" />
+        <label for="employed">Employed</label>
+        <input
+          type="radio"
+          id="self-employed"
+          name="status"
+          value="Self-Employed"
+        />
+        <label for="self-employed">Self-Employed</label>
+        <input type="radio" id="unemployed" name="status" value="Unemployed" />
+        <label for="unemployed">Unemployed</label>
+        <input type="radio" id="student" name="status" value="Student" />
+        <label for="student">Student</label>
+        <br><br>
+        <b><label for="resume_link">Please provide your resume link: </label></b>
+        <input type="link" placeholder="https://www.example.com/">
+        <br><br>
+        <b><label for="resume">Please upload your resume: </label></b>
+        <input type="file" placeholder="Resume">
+        <br><br>
+        <b><label for="Reference_name">Do you have any refereneces?(optional) </label></b>
+        <input type="text" placeholder="First">
+        <input type="text" placeholder="Last">
+        <br><br>
+        <b><label for="reference_email">Reference email: </label></b>
+        <input type="email" placeholder="john.doe@example.com">
+        <br><br>
+        <button type="submit">Apply</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
